@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <title>Formulário de Inscrição</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Formulário de Inscrição</h1>
+            <form id="form">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" maxlength="8" required>
+                <button type="button" id="buscarCep">Buscar CEP</button>
+                
+                <!-- Tabela para mostrar os dados do CEP -->
+                <div id="cep-info" style="display: none;">
+                    <h2>Informações do CEP</h2>
+                    <table>
+                        <tr>
+                            <th>Endereço</th>
+                            <td id="endereco"></td>
+                        </tr>
+                        <tr>
+                            <th>Bairro</th>
+                            <td id="bairro"></td>
+                        </tr>
+                        <tr>
+                            <th>Cidade</th>
+                            <td id="cidade"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Outros campos do formulário -->
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco-input" name="endereco" required>
+                
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro-input" name="bairro" required>
+                
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade-input" name="cidade" required>
+
+                <!-- Seleção de cursos -->
+                <label for="cursos">Cursos</label>
+                <select name="cursos" id="cursos">
+                    <option value="informtica_basica">Informática Básica</option>
+                    <option value="mecanico_motocicleta">Mecânico de Motocicleta</option>
+                    <option value="desenvolvedor_sistemas">Desenvolvedor de Sistemas</option>
+                    <option value="design_grafico">Design Gráfico</option>
+                </select><br><br>
+
+                <!-- Gênero Radio Button -->
+                <label for="sexo">Sexo</label>
+                <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="feminino" name="sexo" value="feminino" required>
+                <label for="feminino">Feminino</label><br><br>
+
+                <!-- Caixa de seleção -->
+                <label for="unidade_operacional">Unidade Operacional</label>
+                <input type="checkbox" id="cetcc" name="unidade_operacional" value="CETCC">
+                <label for="cetcc">CETCC</label>
+                <input type="checkbox" id="cetafaju" name="unidade_operacional" value="CETAFAJU">
+                <label for="cetafaju">CETAFAJU</label>
+                <input type="checkbox" id="ceticc" name="unidade_operacional" value="CETICC">
+                <label for="ceticc">CETICC</label>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

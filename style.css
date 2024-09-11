@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nerko One", cursive;
+    color: black;
+}
+
+.nerko-one-regular {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ef45e734-6a69-4282-9727-7cacab26762a/dfa1ldo-1439522e-957f-4961-9af9-b40c803729da.png/v1/fill/w_1280,h_720,q_80,strp/demon_slayer_snowy_forest_4_by_bea_boo_dfa1ldo-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZWY0NWU3MzQtNmE2OS00MjgyLTk3MjctN2NhY2FiMjY3NjJhXC9kZmExbGRvLTE0Mzk1MjJlLTk1N2YtNDk2MS05YWY5LWI0MGM4MDM3MjlkYS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.cVOnfhueEPGR-0hk2nq98vC07X-ktsouNJBrP0JVmLk");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  label{
+    font-weight:  bold;
+    color: black;
+    margin: 8px;
+  }
+
+  input [type= "text"], select {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  input[type="text"]:focus, select:focus{
+    border-color:black;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+    
+  }
+
+  .container{
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  h1{
+    margin: 30px;
+  }
+
+  button{
+    background-color: red;
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease transfporm 0.2s ease;
+    align-self: center;
+  }
+
+  button:hover{
+    background-color: green;
+    transform: scale(1.05);
+  }
+
+#cep-info {
+    margin-top: 20px;
+}
+
+#cep-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cep-info th, #cep-info td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+#cep-info th {
+    background-color: #f2f2f2;
+}
